@@ -1,4 +1,4 @@
-program problem3
+program heatsolve
     implicit none
     double precision :: k,Q,L,A,B,C,D,E,F
     integer :: n
@@ -8,7 +8,7 @@ program problem3
     allocate(T(n))
     call solve_heat_eqn(K, Q, L, n, A, B, C, D, E, F, T)
     call print_array(T,n)
-end program problem3
+end program heatsolve
 
 subroutine solve_heat_eqn(K, Q, L, n, A, B, C, D, E, F, T)
     implicit none
